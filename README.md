@@ -29,4 +29,4 @@ Guard Cell is used for prevent the impact of the target signal on noise estimate
 Offset value is used for scale the noise threshold. If the signal strength is defined in logarithmic form then add this offset value to the average noise estimate, else multiply it. 
 
 ## Steps taken to suppress the non-thresholded cells at the edges.
-
+To keep the map size same as it was before CFAR, equate all the non-thresholded cells to 0. 
