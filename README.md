@@ -24,7 +24,7 @@ Udacity Sensor Fusion Radar Project Work.
 #### Training Cell
 Training Cell is used for noise estimation. The number of training cells should be decided based on the environment. If a dense traffic scenario then the fewer training cells should be used, as closely spaced targets can impact the noise estimate. 
 #### Guard Cell 
-Guard Cell is used for prevent the impact of the target signal on noise estimate. So the guard cell number should depend on the level of target signal. If the signal strength is high, we need more guard cell. 
+Guard Cell is used for prevent the impact of the target signal on noise estimate. So the guard cell number should depend on the level of target signal. If the signal strength is high, we need more guard cells. 
 #### Offset value 
 Offset value is used for scale the noise threshold. If the signal strength is defined in logarithmic form then add this offset value to the average noise estimate, else multiply it. 
 
