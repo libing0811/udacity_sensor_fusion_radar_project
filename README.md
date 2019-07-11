@@ -1,7 +1,7 @@
 # udacity_sensor_fusion_radar_project
 Udacity Sensor Fusion Radar Project Work. 
 
-Implementation steps for the 2D CFAR process:
+## Implementation steps for the 2D CFAR process:
 	- Select Training Cell Number, including both direction: Tr & Td
 	- Select Guard Cell Number, including both direction: Gr & Gd
 	- Select Offset value of the threshold by SNR value in dB
@@ -20,10 +20,10 @@ Implementation steps for the 2D CFAR process:
 						else
 						    Result of this CUT =1
 				
-Selection of Training, Guard cells and offset.
+## Selection of Training, Guard cells and offset.
     Training Cell is used for noise estimation. The number of training cells should be decided based on the environment. If a dense traffic scenario then the fewer training cells should be used, as closely spaced targets can impact the noise estimate. 
     Guard Cell is used for prevent the impact of the target signal on noise estimate. So the guard cell number should depend on the level of target signal. If the signal strength is high, we need more guard cell. 
 		Offset value is used for scale the noise threshold. If the signal strength is defined in logarithmic form then add this offset value to the average noise estimate, else multiply it. 
 
-Steps taken to suppress the non-thresholded cells at the edges.
+## Steps taken to suppress the non-thresholded cells at the edges.
 
